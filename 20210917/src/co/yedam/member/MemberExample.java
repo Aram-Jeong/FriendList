@@ -1,5 +1,7 @@
 package co.yedam.member;
 
+import co.yedam.Student;
+
 public class MemberExample {
 
 	public static void main(String[] args) {
@@ -35,7 +37,15 @@ public class MemberExample {
 //		m1.memberID = "user1";
 //		m1.name = "Hong";
 //		m1.address = "중구 남일동";
-
+		
+		Student s1 = new Student(); // public 클래스라서 다른 패키지에서도 가능
+		// s1.name = "Hong";  디폴트라서 해당 패키지에서만 가능
+		// s1.score = 90;  디폴트라서 해당 패키지에서만 가능 co.yedam-Student
+		
+		// public => 다른 패키지 접근 가능.
+		// private => 클래스에서만 가능 그외 접근 불가능.
+		//(default) => 동일한 패키지에서만 접근 가능.
+	
 	}
 
 }

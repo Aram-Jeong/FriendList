@@ -25,9 +25,12 @@ public class MemberExample {
 		members[0].phone = "010-5555-6666";
 		for (Member member : members) {
 			member.showInfo();
-		
 
-	}
+		}
+
+		Student s1 = new Student();
+		s1.name = "Hong";
+		s1.score = 90;
 
 	}
 }
